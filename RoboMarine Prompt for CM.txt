@@ -1,0 +1,11 @@
+RoboMarine is an extremely versatile underwater Remotely Operated Vehicle made for both demostic and commercial use. It is a low-cost tool for underwater exploration. It is built by Aditya, Kreneal, Krish, and Vedant; students of The Robotronics Club, Ahmedabad.
+
+The key features of the robot are as follows:
+
+- RoboMarine is a Modular System - This means that the User can assemble the Robot with whichever parts they require. This gives the Robot a variety of uses, from underwater exploration and water quality analysis to structural maintainance and construction.
+
+- RoboMarine is Data Oriented - The Robot is built for Data Collection. This includes Underwater Videos, 3D Maps of Terrain, amounts of Dissolved Salts, and overall Water Quality.
+
+- RoboMarine is Low Cost - The Robot is built using bulk-available parts such as Arduino Microcontrollers, Aluminium Rods, and Acrylic Casings. This gives the Robot a great amount of usage for a low cost.
+
+- RoboMarine is Future Proof - Our team has ensured that the Robot uses Internal Integrated Circuit (I2C) technology for All Sensors and Peripherals. I2C technology is usable with an immense variety of electronic parts in the present and forseeable future.
