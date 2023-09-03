@@ -1,12 +1,14 @@
 #include <Servo.h>
 #include "vec3.h"
 
-#define MOT1PIN 2
-#define MOT2PIN 3
-#define MOT3PIN 4
-#define MOT4PIN 5
-#define MOT5PIN 6
-#define MOT6PIN 7
+
+
+#define MOT1PIN 2       // FWD LEFT
+#define MOT2PIN 3       // FWD RIGHT
+#define MOT3PIN 4       // BACK RIGHT
+#define MOT4PIN 5       // BACK LEFT
+#define MOT5PIN 6       // LEFT CENTRE
+#define MOT6PIN 7       // RIGHT CENTRE
 
 #define CH1PIN 8
 #define CH2PIN 9
@@ -69,8 +71,10 @@ void setup() {
   mot2.write(MOT2DZ);
   mot3.write(MOT3DZ);
   mot4.write(MOT4DZ);
-  mot5.write(MOT5DZ);
-  mot6.write(MOT6DZ);
+  // mot5.write(MOT5DZ);
+  mot5.write(0);
+  // mot6.write(MOT6DZ);
+  mot6.write(0);
   if (USECH1) { pinMode(CH1PIN, INPUT); }
   if (USECH2) { pinMode(CH2PIN, INPUT); }
   if (USECH3) { pinMode(CH3PIN, INPUT); }
@@ -111,8 +115,10 @@ void loop() {
 
 void runUpDownMots()
 {
-  int degMot5 = map(pulseCh6, 1100, 1900, 0, 1.1*MOT5DZ);
-  int degMot6 = map(pulseCh6, 1100, 1900, 0, 1.1*MOT6DZ);
+  // int degMot5 = map(pulseCh6, 900, 2000, 0, 1.1*MOT5DZ);
+  // int degMot6 = map(pulseCh6, 900, 2000, 0, 1.1*MOT6DZ);
+  int degMot5 = map(pulseCh6, 1100, 1900, 0, 170);
+  int degMot6 = map(pulseCh6, 1100, 1900, 0, 170);
   mot5.write(degMot5);
   mot6.write(degMot6);
 }
@@ -176,6 +182,8 @@ void kill()
   mot2.write(MOT2DZ);
   mot3.write(MOT3DZ);
   mot4.write(MOT4DZ);
-  mot5.write(MOT5DZ);
-  mot6.write(MOT6DZ);
+  // mot5.write(MOT5DZ);
+  mot5.write(0);
+  // mot6.write(MOT6DZ);
+  mot6.write(0);
 }
